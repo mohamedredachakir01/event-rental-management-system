@@ -1,0 +1,13 @@
+.auth-container { min-height: calc(100vh - 72px); display: grid; grid-template-columns: 1.1fr .9fr; background: #113127; }
+.auth-intro { min-height: 620px; padding: clamp(3rem, 9vw, 8rem); color: #fff; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(110deg, rgba(11,35,27,.92), rgba(17,57,44,.65)), url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1800&q=85') center/cover; }
+.auth-intro h1 { max-width: 650px; font-size: clamp(2.6rem, 5vw, 5rem); line-height: 1.05; margin-bottom: 1.3rem; }
+.auth-intro > p:not(.eyebrow) { max-width: 500px; color: rgba(255,255,255,.8); font-size: 1.08rem; line-height: 1.8; }
+.auth-intro-stats { display: flex; gap: 2.5rem; margin-top: 2.2rem; color: rgba(255,255,255,.8); font-size: .85rem; }
+.auth-intro-stats strong { display: block; color: var(--gold); font-size: 1.4rem; }
+.auth-box { width: min(100%, 520px); margin: auto; padding: clamp(2rem, 5vw, 4.5rem); background: var(--cream); }
+.auth-heading { margin-bottom: 2rem; }.auth-heading h2 { font-size: 2.15rem; margin: .25rem 0 .7rem; }.auth-heading > p:last-child { color: var(--muted); line-height: 1.6; }
+.auth-mark { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; background: var(--sage); color: var(--forest); margin-bottom: 1.5rem; }
+.field-label { display: block; color: #44544c; font-size: .84rem; font-weight: 700; letter-spacing: .02em; margin-bottom: 1.05rem; }.field-label input, .field-label textarea { width: 100%; margin-top: .42rem; }
+.auth-box input { border: 1px solid #d9dfda; border-radius: 12px; padding: .82rem .9rem; outline: none; }.auth-box input:focus { border-color: var(--gold); box-shadow: 0 0 0 4px rgba(214,166,73,.16); }
+.auth-box .btn { margin-top: .35rem; padding: .85rem; }.auth-switch { text-align: center; margin: 1.5rem 0 0; color: var(--muted); font-size: .92rem; }.auth-switch button { color: var(--forest); background: none; border: 0; font-weight: 700; padding: 0 0 0 .25rem; }
+@media (max-width: 900px) { .auth-container { grid-template-columns: 1fr; }.auth-intro { min-height: auto; padding: 4rem 2rem; }.auth-intro h1 { font-size: 2.8rem; }.auth-box { width: 100%; }.auth-intro-stats { display: none; } }
